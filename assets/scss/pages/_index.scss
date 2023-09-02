@@ -1,5 +1,5 @@
 .banner{
-  background: url(../assets/images/home-header.png) center/ cover;
+  background: url(../images/home-header.png) center/ cover;
   font-family: map-get(font.$font-families,Noto);
   max-width: 100%;
   height: auto;
@@ -108,7 +108,7 @@
     }
 }
 .brand{
-    background: url(../assets/images/index-bg.png) center/ cover;
+    background: url(../images/index-bg.png) center/ cover;
     text-align: center;
     .container{
         padding: 80px 12px;
@@ -131,11 +131,11 @@
         width: 50%;
     }
     &-item1{
-        background: url(../assets/images/home-section4-1.png) center/ cover;
+        background: url(../images/home-section4-1.png) center/ cover;
         height: 240px;   
     }
     &-item2{
-        background: url(../assets/images/home-section4-2.png) center/ cover;
+        background: url(../images/home-section4-2.png) center/ cover;
         height: 240px;
     }
     p{
@@ -260,7 +260,7 @@
 }
 @media (max-width: 992px) {
     .banner{
-        background: url(../assets/images/home-header-sm.png) center/ cover;
+        background: url(../images/home-header-sm.png) center/ cover;
         .container{
             padding: 0px 36px;
         }
@@ -414,10 +414,10 @@
             @include mix.flex(column,flex-start,center);
         }
         &-item1{
-            background: url(../assets/images/home-section4-1-sm.png) center/ cover;
+            background: url(../images/home-section4-1-sm.png) center/ cover;
         }
         &-item2{
-            background: url(../assets/images/home-section4-2-sm.png) center/ cover;
+            background: url(../images/home-section4-2-sm.png) center/ cover;
         } 
         &-item1,&-item2{
             width: 348px;
