@@ -1,0 +1,63 @@
+.faq{
+    font-family: map-get(font.$font-families, Noto);
+    color: map-get(var.$font-colours, black);
+    .container{
+        padding: 80px 12px 80px 12px;
+    }
+    ul{
+        max-width: 856px;
+    }
+    h1{
+        font-size: map-get(font.$font-size, fz-2);
+        line-height: 72px;
+        font-weight: bold;
+        border-left: 8px solid map-get(var.$bg-colours, dark);
+        padding-left: 12px;
+        margin: 16px 0px 32px 0px;
+    }
+    h2{
+        font-size: map-get(font.$font-size, fz-4);
+        line-height: 36px;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+    h3{
+        font-size: map-get(font.$font-size, fz-5);
+        line-height: 30px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    li{
+        margin-bottom: 32px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        p{
+            line-height: 24px;
+        }
+    }
+    @media (max-width: 992px){
+        .container{
+            padding: 80px 36px;
+        }
+        h1{
+            margin-top: 0px;
+        }
+    }
+    @media (max-width: 768px){
+        .container{
+            padding: 40px 12px;
+        }
+        h1{
+            font-size: map-get(font.$font-size, fz-4);
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+        li{
+            margin-bottom: 24px;
+            &:last-child{
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

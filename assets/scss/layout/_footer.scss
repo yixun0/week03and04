@@ -1,4 +1,117 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background-color: map-get(var.$bg-colours,primary);
+  font-family: map-get(font.$font-families, Noto);
+  a,p{
+    color:map-get(var.$bg-colours, white);
+  }
+  .container{
+    padding: 48px 12px 32px 12px;
+  }
+  &-content{
+    @include mix.flex(row,space-between,flex-start);
+  }
+  &-nav{
+    display: flex;
+    line-height: 48px;
+    margin-bottom: 24px;
+    li{
+      margin-right: 48px;
+    }
+  }
+  &-icon{
+    a{
+      margin-left: 32px;
+    }
+    img{
+      width: 48px;
+      height: 48px;
+    }
+  }
+  &-tel{
+    margin-bottom: 8px;
+  }
+  &-tel,&-mail{
+    @include mix.flex(row,flex-start,center);
+    font-size: map-get(font.$font-size, fz-3);
+    line-height: 54px;
+    span{
+      font-size: 48px;
+      margin-right: 16px;
+    }
+  }
+  &-privacy-and-terms{
+    @include mix.flex(row,space-between,flex-start);
+    margin-top: 32px;
+    border-top: 1px solid white;
+    p,div{
+      margin-top: 32px;
+    }
+    p{
+      line-height: 24px;
+      font-family: map-get(font.$font-families, Roboto);
+    }
+    a{
+      font-size: map-get(font.$font-size, fz-7);
+      line-height: 21px;
+      margin-left: 48px;
+    }
+  }
+  @media (max-width: 992px) {
+    .container{
+      padding: 48px 36px 40px 36px;
+    }
+    &-nav{
+      line-height: 40px;
+    }
+    &-icon{
+      a{
+        margin-left: 16px;
+      }
+      img{
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .container{
+      padding: 24px 12px;
+    }
+    &-nav{
+      display: none;
+    }
+    &-icon{
+      a{
+        margin-left: 8px;
+      }
+      img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &-tel,&-mail{
+      font-size: map-get(font.$font-size, fz-6);
+      line-height: 24px;
+      span{
+        font-size: 24px;
+        margin-right: 8px;
+      }
+    }
+    &-privacy-and-terms{
+      flex-direction: column;
+      p{
+        margin-top: 16px;
+      }
+      div{
+        margin-top: 0px;
+      }
+      a{
+        display: block;
+        margin-left: 0px;
+        margin-top: 8px;
+        font-size: map-get(font.$font-size, fz-6);
+        line-height: 24px;
+      }
+    }
+  }
 }

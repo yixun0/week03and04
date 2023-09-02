@@ -1,0 +1,20 @@
+*,*::after,*::before{
+	box-sizing: border-box;
+}
+
+img{
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+	max-width: 1296px;
+	margin: 0 auto;
+}
+li{
+	list-style: none;
+}
